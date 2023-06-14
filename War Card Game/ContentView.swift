@@ -36,16 +36,16 @@ struct ContentView: View {
                 HStack{
                     Spacer()
                     VStack{
-                        Text("Player")
+                        Text("Player").font(.headline)
                             .padding(.bottom, 5.0)
-                        Text("0").font(.title2)
+                        Text("0").font(.largeTitle)
                     }
                     Spacer()
                     
                     VStack{
-                        Text("Computer").padding(.bottom, 5.0)
+                        Text("Computer").font(.headline).padding(.bottom, 5.0)
                         
-                        Text("0").font(.title2)
+                        Text("0").font(.largeTitle)
                     }
                     Spacer()
                 }.foregroundColor(.white)
