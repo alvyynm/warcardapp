@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            Image("background-plain")
+            Image("background-plain").resizable().ignoresSafeArea()
             VStack {
                 Spacer()
                 Image("logo")
