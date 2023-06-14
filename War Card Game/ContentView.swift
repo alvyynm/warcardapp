@@ -37,13 +37,13 @@ struct ContentView: View {
                     Spacer()
                     VStack{
                         Text("Player").font(.headline)
-                            .padding(.bottom, 5.0)
+                            .padding(.bottom, 10.0)
                         Text("0").font(.largeTitle)
                     }
                     Spacer()
                     
                     VStack{
-                        Text("Computer").font(.headline).padding(.bottom, 5.0)
+                        Text("Computer").font(.headline).padding(.bottom, 10.0)
                         
                         Text("0").font(.largeTitle)
                     }
