@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var playerCard = "card2"
+    var computerCard = "card3"
+    
+    var playerScore = 0
+    var computerScore = 0
+    
     var body: some View {
         ZStack{
             Image("background-plain").resizable().ignoresSafeArea()
@@ -18,14 +25,16 @@ struct ContentView: View {
                 Spacer()
                 HStack{
                     Spacer()
-                    Image("card2")
+                    Image(playerCard)
                     Spacer()
-                    Image("card3")
+                    Image(computerCard)
                     Spacer()
                 }
                 Spacer()
                 
                 Button {
+                    
+                    deal()
                         
                 } label: {
                     Image("button")
@@ -38,14 +47,14 @@ struct ContentView: View {
                     VStack{
                         Text("Player").font(.headline)
                             .padding(.bottom, 10.0)
-                        Text("0").font(.largeTitle)
+                        Text(String(playerScore)).font(.largeTitle)
                     }
                     Spacer()
                     
                     VStack{
                         Text("Computer").font(.headline).padding(.bottom, 10.0)
                         
-                        Text("0").font(.largeTitle)
+                        Text(String(computerScore)).font(.largeTitle)
                     }
                     Spacer()
                 }.foregroundColor(.white)
@@ -55,6 +64,10 @@ struct ContentView: View {
         }
         
         
+    }
+    
+    func deal() {
+        print("Deal cards!")
     }
 }
 
