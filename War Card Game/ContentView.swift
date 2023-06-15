@@ -72,7 +72,6 @@ struct ContentView: View {
         var computerCardNumber = Int.random(in: 2...14)
         
         playerCard = "card" + String(playerCardNumber)
-        print("Deal cards!")
         
         computerCard = "card" + String(computerCardNumber)
         
